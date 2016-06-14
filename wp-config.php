@@ -26,7 +26,7 @@ define('DB_NAME', 'agency-plaitil');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'RtCzJmz_.KIV^cX.E1dU5*]<7g!`nP%2<4z(#TUd?YS#<y2dBA[{+W)OvV`~A~c~');
-define('SECURE_AUTH_KEY',  'LwGj-{K&V}J*=;.MRsz(rqyaG!jeBBE4(/v[*o*eX=$8ZOT=dEGsO}l+ZJXC+Co*');
-define('LOGGED_IN_KEY',    '=85UwJczJc;mev-@/?:%Zyk[##A#Gid3Z.y){D{QCBT2$M}(cYpAXooC3||>,jS_');
-define('NONCE_KEY',        ' v>~]Yt~.78$;2IpF0#+rvshg~Dn$!)<+jlXwnf9e-h>[I({0|5CAs7[}x49>~0g');
-define('AUTH_SALT',        'VTQ{7=;wiTUyZ#?FAnl&HZ6.It*[L1+iF!Vm?6~5$IFT@fXhZv.Kf=4jx.UcYMXE');
-define('SECURE_AUTH_SALT', 'xJ^(qDY$ot)TYQUrd3p;CTlQ)p/_N=_.Kcn){MhX~wx:G8ghd86+FhS7rjn[mcRR');
-define('LOGGED_IN_SALT',   '5nup,f$ t[&lrc<~HyoPgpyk(RDXae{I-kuL=zGb@.hCpr4&+r#mJ]Z3[Zv.-6e9');
-define('NONCE_SALT',       'no5l^7,,XMNr&pTdTZxxwreO.oEl-$121`W8O2}ryMEkaE4f!0e;J:kL8*Z/UXm ');
+define('AUTH_KEY',         '/HshksbH#NQlaA=290cyR)pon?OdXMwePH=g:51tq{?mHfnTTsdyo_wP>JckchP}');
+define('SECURE_AUTH_KEY',  'UatkuipRF=I++W*$2YIbMZn~Cae`Q{,jb|^B%22JB.J9m~Jh0tV[zwC25fvpJM:1');
+define('LOGGED_IN_KEY',    'SvEt#<^.k/Q[]!nsRsV<NMO<iS=<b/Wb&5wV XN@ZmSl5nFB7YJ*]Q/j3]*cdF3o');
+define('NONCE_KEY',        '?M]/9$=^:/J5Qv7v?LCT{vkUb60Kd]C=k}E5G5cU#Iy9!:VV*2*NF22NQNSQ_w)!');
+define('AUTH_SALT',        'h`]aduyiZ}x4.TN=$beP@Z[niE2cA*U5$N6$0n1#}pWn.(s=&d_>%1@[inKjjD&x');
+define('SECURE_AUTH_SALT', 'Km |dx?WgZz;Lsy($>uh$IgvPjkCh8@AXo-,WdbEp8Be9B)ex_#f;DM1Vnv>2;Aa');
+define('LOGGED_IN_SALT',   '|qh*3k|!GGUvz!%-/RN>w0Rq$S`f#btci4#*7]>zHZEuKG2i -c-Ahv~;#F%QNcn');
+define('NONCE_SALT',       '|sZ@qS{.}5V^Pn1z[0&%Dx}vH`A/|aO.n?trh#M8fY9KF0ylL=RNlMrLVU6X8zXa');
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define('NONCE_SALT',       'no5l^7,,XMNr&pTdTZxxwreO.oEl-$121`W8O2}ryMEkaE4f!0e;
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_pt2k16';
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.

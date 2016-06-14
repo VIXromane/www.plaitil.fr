@@ -1,35 +1,32 @@
 #slider{
-	list-style: none;
-	position: relative;
-}
 
-.flewslider{
-	.slides{
-		list-style: none !important;
-
-		img{
-			height: 100vh;
-			width:100% !important;
-		}
-	}
-}
-
-img.slide{
-	width: 100%;
-	height: auto;
-}
-
-.content-slide{
-	position: absolute;
-	top: 50%;
 	h5{
 		font-family: $lato;
 		font-size: 80px;
 		color: white;
 		margin: 0 auto;
 		text-transform: uppercase;
-	}
-	a{
 
+		@include breakpoint(small only){
+		}
+	}
+
+}
+
+
+
+.ms-info{
+	margin: 0 auto !important;
+	margin-top: 6% !important;
+	a{
+		font-size: 18px;
+		font-family: $lato !important;
+		text-transform: none;
+		color: white;
+		font-style: italic;
+		font-weight: 700;
+		padding: 10px 20px !important;
+		border-radius: 50px;
+		border: 2px solid white;
 	}
 }

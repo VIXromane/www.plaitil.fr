@@ -21,6 +21,8 @@ get_header(); ?>
 
 <section id="slider">
 
+	<?php masterslider(1); ?>
+
 <!-- <div class="flexslider">
 	<ul class="slides">
 		<li class="">
@@ -154,7 +156,7 @@ get_header(); ?>
 				Nous pouvons vous aider à concrétiser votre projet. 
 				Nous vous accompagnerons et développerons votre projet de façon à le rendre unique !
 			</h4>
-			<?php echo do_shortcode('[contact-form-7 id="20" title="Formulaire de contact"]') ?>
+			<?php echo do_shortcode('[contact-form-7 id="7" title="Contact form 1"]') ?>
 		</div>
 	</div>
 
