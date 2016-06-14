@@ -45,15 +45,29 @@
 </div><!-- Close off-canvas content wrapper -->
 <?php endif; ?>
 
-<script src="<?php echo get_stylesheet_directory_uri();?>/assets/javascript/jquery.flexslider.js"></script>
+<!-- Ancres scroll to -->
+
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+
 <script type="text/javascript">
 
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});</script>
+
+$('.responsivemenu a').addClass('js-scrollTo')
+
+$('.showmenuresponsive').on('click', function(){
+	$('.responsivemenu').toggle('slow')
+})
+
+</script>
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>

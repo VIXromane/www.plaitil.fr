@@ -1,13 +1,17 @@
 #slider{
+	margin-top: -80px;
 
 	h5{
 		font-family: $lato;
+		font-weight: 700;
 		font-size: 80px;
 		color: white;
 		margin: 0 auto;
 		text-transform: uppercase;
 
 		@include breakpoint(small only){
+			font-size:30px;
+			margin-top: -20px;
 		}
 	}
 
@@ -17,7 +21,8 @@
 
 .ms-info{
 	margin: 0 auto !important;
-	margin-top: 6% !important;
+	margin-top: 10% !important;
+
 	a{
 		font-size: 18px;
 		font-family: $lato !important;
@@ -28,5 +33,28 @@
 		padding: 10px 20px !important;
 		border-radius: 50px;
 		border: 2px solid white;
+		transition:0.5s !important;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		
+		@include breakpoint(small only){
+			font-size:14px;
+			margin-top:15px;
+			
+		}
+
+
+		&:hover{
+			transition:0.5s !important;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			background-color: $blue;
+			border: 0px;
+			color: $black;
+		}
 	}
 }

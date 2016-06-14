@@ -57,7 +57,7 @@ get_header(); ?>
 <section id="agence">
 	<div class="title text-center">
 		<h1>Agence “Plaît-il ?” </h1>
-		<h2>Exploratrice en web depuis 2005</h2>
+		<a href="#projets" class="js-scrollTo"><h2>Exploratrice en web depuis 2005</h2></a>
 	</div>
 	<div class="row presentation-1">
 		<div class="medium-6 small-12 columns">

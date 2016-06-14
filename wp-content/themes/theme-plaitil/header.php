@@ -34,40 +34,28 @@
 
 		<?php do_action( 'foundationpress_layout_start' ); ?>
 
-		<header id="masthead" class="site-header" role="banner">
-			<div class="title-bar" data-responsive-toggle="site-navigation">
-				<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-				<div class="title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</div>
+		<header id="masthead" role="banner">
+			<div class="logo small-2 offset-6 columns">
+				<a class="logo-head" href="http://localhost:8888/www.plaitil.fr/logo-plaitil.png">
+					<img id="logo-head"src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/logo-plaitil.png" alt="logo principal main timelapse">
+				</a>
 			</div>
 
-			<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-				<div class="top-bar-left">
-					<ul class="menu">
-						<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-					</ul>
-				</div>
-				<div class="top-bar-right">
-					<?php foundationpress_top_bar_r(); ?>
-
-					<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
-					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
-			</div>
+			<nav id="site-navigation" role="navigation" class="logo small-2 offset-6 columns">
 
 				<!-- CUSTOM MENU -->
 				
-			<div class="header-custom-menu ">
-				<div class="noresponsive"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div><!-- NO RESPONSIVE MENU -->
-				<button class="showmenuresponsive"><i class="fa fa-bars"></i></button>
-				<div class="responsivemenu text-center"><!-- RESPONSIVE MENU -->
-					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+				<div class="header-custom-menu ">
+					<button class="showmenuresponsive"><i class="fa fa-bars"></i></button>
 				</div>
-			</div>
 
-		</nav>
-	</header>
+			</nav>
+		</header>
 
-	<section class="container">
-		<?php do_action( 'foundationpress_after_header' );
+		<div class="responsivemenu text-center"><!-- RESPONSIVE MENU -->
+			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+		</div>
+
+
+		<section class="container">
+			<?php do_action( 'foundationpress_after_header' );

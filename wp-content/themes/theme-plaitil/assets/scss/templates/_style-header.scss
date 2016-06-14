@@ -1,0 +1,67 @@
+body{
+	overflow-x:hidden;
+}
+
+header{
+	display: block;
+	height: 100px;
+}
+
+#logo-head{
+	transform: scale(0.4);
+	
+}
+
+.showmenuresponsive{
+	i{
+		font-size: 20px;
+		color: black;
+		padding:20px;
+		float: right;
+	}
+}
+
+.responsivemenu{
+	display:none;
+	position:absolute;
+	top:50px;
+	left:0;
+	background: rgba(255, 255, 255, 0.98);
+	z-index:111;
+	width:100vw;
+	height:100vh;
+
+	ul{
+		margin-top: 8%;
+
+		li{
+			display: block;
+			a{
+				font-family: $lato;
+				font-size: 60px;
+				color: $black;
+				line-height: 90px;
+				text-align: center;
+				margin: 0 auto;
+				font-weight: 800;
+				transition:0.5s !important;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+
+				&:hover{
+					color: $blue;
+				}
+
+				@include breakpoint(small only){
+					font-size:60px;
+					line-height: 70px;
+					padding:30px 20px;
+				}
+			}
+		}
+	}
+	
+}
+
