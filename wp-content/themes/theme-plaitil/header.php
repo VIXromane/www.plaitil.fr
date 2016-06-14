@@ -18,7 +18,7 @@
 	<!--FONTS-->
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
-	
+
 	<?php wp_head(); ?>
 </head>
 
@@ -55,6 +55,16 @@
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
 			</div>
+			
+				<!-- CUSTOM MENU -->
+			<div class="header-custom-menu ">
+				<div class="noresponsive"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div><!-- NO RESPONSIVE MENU -->
+				<button class="showmenuresponsive"><i class="fa fa-bars"></i></button>
+				<div class="responsivemenu text-center"><!-- RESPONSIVE MENU -->
+					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+				</div>
+			</div>
+
 		</nav>
 	</header>
 

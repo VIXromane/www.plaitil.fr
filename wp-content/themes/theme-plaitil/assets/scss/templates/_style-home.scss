@@ -1,0 +1,301 @@
+/** GLOBAL **/
+.no-padding{
+	padding-left:0px !important;
+}
+.title{
+	display: block;
+	background-color: $blue;
+	height:185px;
+	width: 100%;
+	margin: 50px 0px;
+
+	@include breakpoint(small only){
+		height:300px;
+	}
+	h1{
+		font-family: $lato;
+		color: white;
+		font-size: 60px;
+		font-weight:800;
+		padding-top: 25px;
+
+	}
+	h2{
+		font-family: $lato;
+		color: white;
+		font-size: 20px;
+		font-weight:800;
+		font-style: italic;
+	}
+}
+
+p{
+	font-family: $play;
+	font-size: 14px;
+	color: $black;
+	line-height: 24px;
+}
+
+.button{
+	height: 50px;
+	margin-top: 25px;
+	border-radius: 50px;
+	line-height: 25px;
+	font-family: $lato;
+	font-weight: 700;
+	font-family: 18px;
+	font-style: italic;
+	color: $black;
+	background-color: $grayblue;
+	padding-right: 20px;
+	padding-left: 20px;
+	transition:0.5s;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		transition:0.5s;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		background-color: $black;
+		color: white;
+	}
+}
+
+/***AGENCE***/
+
+#agence{
+	i{
+		font-size: 30px;
+		font-weight: 800;
+		font-style: normal;
+	}
+	.presentation-1{
+		p{
+			&:first-child{
+				margin-top: 50px;
+			}
+		}
+		img{
+			
+			margin-bottom: 100px;
+			float: right;
+			transition:0.5s;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+
+			@include breakpoint(small only){
+				margin-bottom: 50px;
+			}
+			
+			&:hover{
+				-ms-transform: rotate(5deg); /* IE 9 */
+				-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+				transform: rotate(5deg);
+				transition:0.5s;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+	}
+	.presentation-2{
+		p{
+			margin-left:70px;
+			&:first-child{
+				margin-top: 50px;
+				float: right;
+			}
+			@include breakpoint(small only){
+				margin-left:0px;
+			}
+		}
+		a{
+			margin-left:70px;
+			@include breakpoint(small only){
+				margin-left:0px;
+			}
+		}
+		img{
+			&:first-child{
+				margin-bottom: 100px;
+				transition:0.5s;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+
+			@include breakpoint(small only){
+				margin-bottom: 0px !important;
+			}
+			&:hover{
+				-ms-transform: rotate(-5deg); /* IE 9 */
+				-webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+				transform: rotate(-5deg);
+				transition:0.5s;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+	}
+	h3{
+		font-family: $play;
+		color: $black;
+		font-size: 20px;
+		padding: 5px;
+		padding-left: 20px;
+		border-left: 6px solid black;
+		line-height: 30px;
+		font-weight: 700;
+		margin-left:70px;
+		@include breakpoint(small only){
+			margin-left:0px;
+		}
+	}
+	
+}
+
+/*** PORTFOLIO ***/
+
+#projets{
+	h4{
+		font-family: $play;
+		font-weight: 700;
+		font-size: 14px;
+		color: black;
+		line-height: 24px;
+		text-align: left;
+		padding:5px;
+		padding-left: 20px;
+		border-left: 6px solid black;
+		margin-bottom: 50px;
+
+	}
+}
+
+#contact{
+	h4{
+		font-family: $play;
+		font-weight: 700;
+		font-size: 14px;
+		color: black;
+		line-height: 24px;
+		text-align: left;
+		padding:5px;
+		padding-left: 20px;
+		border-left: 6px solid black;
+		margin-bottom: 50px;
+
+	}
+}
+
+/*** CONTACT FORMULAIRE ***/
+
+#contact{
+	img{
+		transition:0.5s;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			-ms-transform: rotate(5deg); /* IE 9 */
+			-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+			transform: rotate(5deg);
+			transition:0.5s;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
+
+form{
+	input{
+		height:50px !important;
+		background-color: white;
+		border: 1px solid #e6e6e6;
+		cursor: pointer;
+		box-shadow: none!important;
+		transition:0.5s;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+			background-color: #eff9f8 !important;
+			border: 0px !important;
+			transition:0.5s;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	textarea{
+		height:10px !important;
+		background-color: white;
+		border: 1px solid #e6e6e6 !important;
+		box-shadow: none!important;
+		transition:0.5s;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+			background-color: #eff9f8 !important;
+			border: 0px !important;
+			transition:0.5s;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+
+
+	input[type="submit"]{
+		height: 50px;
+		margin-top: 25px;
+		border-radius: 50px;
+		line-height: 25px;
+		font-family: $lato;
+		font-weight: 700;
+		font-style: italic;
+		color: $black;
+		background-color: $grayblue;
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+		width: 200px;
+		transition:0.5s;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		float: right;
+
+		&:hover{
+			transition:0.5s;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			background-color: $black !important;
+			color: white;
+		}
+	}
+}

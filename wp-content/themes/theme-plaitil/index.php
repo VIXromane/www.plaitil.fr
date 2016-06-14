@@ -28,67 +28,69 @@ get_header(); ?>
 		<h1>Agence “Plaît-il ?” </h1>
 		<h2>Exploratrice en web depuis 2005</h2>
 	</div>
-	<div class="row">
+	<div class="row presentation-1">
 		<div class="medium-6 small-12 columns">
 			<p>
-				Faites confiance à une agence expérimentée, pour qui le web n’a plus de secret. Grâce à notre équipe de professionnels, nous pouvons prendre en charge l’intégralité de votre projet.</p>
+				<i>F</i>aites confiance à une <strong>agence expérimentée</strong>, pour qui le <strong>web</strong> n’a plus de secret. Grâce à notre équipe de <strong>professionnels</strong>, nous pouvons prendre en charge l’intégralité de votre <strong>projet</strong>.</p>
 
-			<p>L’agence “plait-il?” réunit un collectif de professionnels et vous accompagne sur toute la chaîne de communication, de votre identité visuelle à votre stratégie digitale. </p>
+				<p>L’agence “plait-il?” réunit un collectif de <strong>professionnels</strong> et vous accompagne sur toute la chaîne de <strong>communication</strong>, de votre <strong>identité visuelle</strong> à votre <strong>stratégie digitale</strong>. </p>
 
-			<p>Chaque projet, chaque client est unique. Pour chacun, nous mettons en œuvre une méthodologie structurée et sur-mesure. Elle garantit un pilotage efficace et le respect de nos engagements.
+				<p>Chaque <strong>projet</strong>, chaque client est <strong>unique</strong>. Pour chacun, nous mettons en œuvre une <strong>méthodologie</strong> structurée et <strong>sur-mesure</strong>. Elle garantit un pilotage efficace et le respect de nos <strong>engagements</strong>.
 
-			</p>
-			<a href="#" class="button">Nos projets</a>
+				</p>
+				<a href="#" class="button medium-4 small-12 columns">Nos projets</a>
+			</div>
+
+			<div class="medium-6 small-12 columns">
+				<img class="no-padding" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/visuel-agence-plaitil.jpg" alt="agence projets visuel-agence-plaitil">
+			</div>
+
 		</div>
 
-		<div class="medium-6 small-12 columns">
-			<img class="shopping-bag" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/visuel-agence-plaitil.jpg" alt="panier">
-		</div>
+		<div class="row presentation-2">
+			<div class="medium-6 small-12 columns ">
+				<img class="" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/visuel-agence-plaitil-2.jpg" alt="image plaitil agence">
+			</div>
+			<div class="medium-6 small-12 columns">
+				<p>
+					<i>C</i>hez “Plait-il?”, nous cultivons les paradoxes : <strong>sérieux</strong> et <strong>bonne humeur</strong>, <strong>rigueur</strong> et <strong>créativité</strong>, <strong>autonomie</strong> et <strong>esprit d’équipe</strong> sont les valeurs que nous partageons, en exerçant tous les jours nos <strong>métiers</strong> si différents. 
+				</p>
+				<p>Vous vous reconnaissez ? </p>
+				<h3>Il est une promesse que nous pouvons vous faire : 
+					vous n’allez pas vous ennuyer !</h3>
 
-	</div>
+					<a href="#" class="button medium-4 small-12 columns">Contactez-nous !</a>
+				</div>
 
-	<div class="row">
-		<div class="medium-6 small-12 columns">
-			<img class="shopping-bag" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/visuel-agence-plaitil-2.jpg" alt="panier">
-		</div>
-		<div class="medium-6 small-12 columns">
-			<p>
-				Chez “Plait-il?”, nous cultivons les paradoxes : sérieux et bonne humeur, rigueur et créativité, autonomie et esprit d’équipe sont les valeurs que nous.partageons, en exerçant tous les jours nos métiers si différents. 
-			</p>
-			<p>Vous vous reconnaissez ? </p>
-			<h3>Il est une promesse que nous pouvons vous faire : 
-			vous n’allez pas vous ennuyer !</h3>
+			</div>
+		</section>
 
-			<a href="#" class="button">Contactez-nous !</a>
-		</div>
+		<!--PROJETS-->
 
-	</div>
-</section>
+		<section id="projets">
+			<div class="title text-center">
+				<h1>Projets</h1>
+				<h2>Quelques unes de nos réalisations</h2>
+			</div>
+			<div class="row">
+				<p class="hide-for-small-only large-2 columns"></p>
+				<h4 class="small-8 columns text-center">
+					Voici quelques uns des projets dont nous sommes fiers ! Notre équipe Web Design effectue une veille permanente afin de vous faire profiter des dernières tendances et innovations pour un design unique et impactant.
+				</h4>
+				<p class="hide-for-small-only large-2 columns"></p>
+			</div>
+			<div class="row portfolio-grid">
 
-<!--PROJETS-->
+				<article class="main-content">
+					<?php if ( have_posts() ) : ?>
 
-<section id="projets">
-	<div class="title text-center">
-		<h1>Projets</h1>
-		<h2>Quelques unes de nos réalisations</h2>
-	</div>
-	<div class="row">
-		<h4 class="small-12 columns text-center">
-			Voici quelques uns des projets dont nous sommes fiers ! Notre équipe Web Design effectue une veille permanente afin de vous faire profiter des dernières tendances et innovations pour un design unique et impactant.
-		</h4>
-	</div>
-	<div class="row portfolio-grid">
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+				<?php endwhile; ?>
 
-		<article class="main-content">
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-		<?php endwhile; ?>
-
-		<?php else : ?>
-		<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php else : ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; // End have_posts() check. ?>
 
@@ -100,11 +102,31 @@ get_header(); ?>
 		</nav>
 		<?php } ?>
 
-		</article> 
-	</div>
+	</article> 
+</div>
 
-		
-	</div>
+
+</div>
 </section>
 
-<?php get_footer();
+<!--CONTACT-->
+
+<section id="contact">
+	<div class="title text-center">
+		<h1>Nous contacter</h1>
+		<h2>Ne soyez pas timides !</h2>
+	</div>
+	<div class="row">
+		<div class="medium-6 small-12 columns">
+			<img class="" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/logo-circles-contact.png" alt="logo contact">
+		</div>
+		<div class="medium-6 small-12 columns">
+			<h4 class="small-12 columns">
+				Nous pouvons vous aider à concrétiser votre projet. 
+				Nous vous accompagnerons et développerons votre projet de façon à le rendre unique !
+			</h4>
+			    <?php echo do_shortcode('[contact-form-7 id="20" title="Formulaire de contact"]') ?>
+		</div>
+	</div>
+
+	<?php get_footer();

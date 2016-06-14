@@ -1,0 +1,87 @@
+
+
+#social-foot{
+	background-color: $black !important;
+	display: block;
+	padding: 50px;
+	margin-top: 50px;
+	border-bottom: 6px solid $blue;
+
+	h3{
+		font-family: $lato;
+		color: white;
+		font-size: 20px;
+		font-weight:800;
+		font-style: italic;
+		color: white;
+		margin:30px 0px;
+	}
+	.social-list{
+		li{
+			display: inline-block;
+			a{
+				i{
+					color: white;
+					font-size: 25px;
+					padding: 0px 10px;
+					transition:0.5s;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+					&:first-child{
+						padding-left: 0px;
+					}
+
+					&:hover{
+						transition:0.5s;
+						-webkit-transition: all 0.3s ease-in-out;
+						-moz-transition: all 0.3s ease-in-out;
+						-o-transition: all 0.3s ease-in-out;
+						transition: all 0.3s ease-in-out;
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+}
+.foot-foot{
+	display: block;
+	background-color: #f4f3f3;
+	padding: 25px 0px;
+
+	@include breakpoint(small only){
+		height:100px;
+	}
+
+
+	ul{
+		li{
+			display: inline-block;
+			font-family: $play;
+			font-size: 12px;
+
+
+			a{
+				text-decoration: underline;
+				color: black;
+				transition:0.5s;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+
+				&:hover{
+					transition:0.5s;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+					color: $blue;
+				}
+			}
+		}
+	}
+}
+
