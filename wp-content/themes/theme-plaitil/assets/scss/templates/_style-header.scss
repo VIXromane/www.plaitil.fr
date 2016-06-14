@@ -2,29 +2,71 @@ body{
 	overflow-x:hidden;
 }
 
-header{
+#masthead{
 	display: block;
-	height: 100px;
+	height: 100px !important;
+	border-bottom: 6px solid $blue;
 }
 
-#logo-head{
-	transform: scale(0.4);
-	
-}
+.logo{
+	height: 100px !important;
+	display: flex;
+	align-items:center;
 
-.showmenuresponsive{
-	i{
-		font-size: 20px;
-		color: black;
-		padding:20px;
-		float: right;
+	#logo-head{
+		transform: scale(0.5);
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			transform: scale(0.55);
+		}
+
 	}
 }
+
+.header-custom-menu{
+	height: 100px !important;
+	float: right;
+	display: flex;
+	align-items:center;
+	.showmenuresponsive{
+		float: right;
+		i{
+			font-size: 20px;
+			color: black;
+			padding:20px;
+			float: right;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+
+			&:hover{
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+				color: $blue;
+				transform: scale(1.25);
+			}
+
+		}
+	}
+}
+
+
 
 .responsivemenu{
 	display:none;
 	position:absolute;
-	top:50px;
+	top:98px;
 	left:0;
 	background: rgba(255, 255, 255, 0.98);
 	z-index:111;

@@ -1,5 +1,5 @@
 #slider{
-	margin-top: -80px;
+	margin-top: -50px;
 
 	h5{
 		font-family: $lato;
@@ -7,7 +7,19 @@
 		font-size: 80px;
 		color: white;
 		margin: 0 auto;
-		text-transform: uppercase;
+		
+
+		strong{
+			font-family :$play !important;
+			font-style: italic;
+			font-weight: 700;
+		}
+
+		i{
+			border-bottom: 6px solid $blue;
+			font-style: normal;
+
+		}
 
 		@include breakpoint(small only){
 			font-size:30px;
@@ -54,7 +66,7 @@
 			transition: all 0.3s ease-in-out;
 			background-color: $blue;
 			border: 0px;
-			color: $black;
+			/*color: $black;*/
 		}
 	}
 }

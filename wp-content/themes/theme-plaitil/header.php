@@ -36,16 +36,16 @@
 
 		<header id="masthead" role="banner">
 			<div class="logo small-2 offset-6 columns">
-				<a class="logo-head" href="http://localhost:8888/www.plaitil.fr/logo-plaitil.png">
+				<a class="logo-head" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img id="logo-head"src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/logo-plaitil.png" alt="logo principal main timelapse">
 				</a>
 			</div>
 
-			<nav id="site-navigation" role="navigation" class="logo small-2 offset-6 columns">
+			<nav id="site-navigation" role="navigation" class="small-2 offset-6 columns">
 
 				<!-- CUSTOM MENU -->
 				
-				<div class="header-custom-menu ">
+				<div class="header-custom-menu">
 					<button class="showmenuresponsive"><i class="fa fa-bars"></i></button>
 				</div>
 

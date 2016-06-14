@@ -1,0 +1,54 @@
+
+/****DETAIL PROJET***/
+
+.project-title{
+	width: 100%;
+	background-color: $blue;
+	display: block;
+	height: 190px;
+	margin-top: 0px !important;
+	h1{
+		font-family: $lato;
+		color: white;
+		padding-top: 40px;
+		font-size: 60px;
+		font-weight: 800;
+	}
+	h2{
+		font-family: $lato;
+		color: white;
+		font-size: 20px;
+		font-weight:800;
+		font-style: italic;
+
+	}
+}
+
+.intro-project{
+	height: 300px !important;
+	display: flex;
+	align-items:center;
+}
+.lettrine{
+	font-family: $lato;
+	color: #f0f0f0;
+	font-size: 400px;
+	font-weight: 800;
+
+
+}
+
+.description{
+
+	p{
+		font-family: $play;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		strong{
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+}

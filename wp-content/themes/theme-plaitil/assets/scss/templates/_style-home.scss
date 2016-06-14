@@ -11,6 +11,10 @@
 	width: 100%;
 	margin: 50px 0px;
 
+	&:first-child{
+		margin-top:0px;
+	}
+
 	@include breakpoint(small only){
 		height:300px;
 	}
