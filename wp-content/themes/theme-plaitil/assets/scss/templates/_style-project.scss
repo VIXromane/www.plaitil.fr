@@ -28,12 +28,14 @@
 	height: 300px !important;
 	display: flex;
 	align-items:center;
+	margin-bottom: 50px;
 }
 .lettrine{
 	font-family: $lato;
 	color: #f0f0f0;
 	font-size: 400px;
 	font-weight: 800;
+	margin-top: -40px;
 
 
 }
@@ -52,3 +54,75 @@
 		}
 	}
 }
+
+
+/**** SIDEBAR DU PROJET ***/
+
+.sidebar-projet{
+	margin-right: 0px;
+	display: block;
+	float: right;
+}
+
+.infos-projet{
+	background-color: $black;
+	display: block;
+	padding:0 50px;
+	padding-bottom: 50px;
+	padding-top: 25px;
+	width: 100%;
+
+	h3{
+		font-family: $lato;
+		color: white;
+		font-size: 20px;
+		font-weight:800;
+		font-style: italic;
+		margin: 25px 0px;
+
+	}
+	li{
+		font-family: $lato;
+		list-style: none;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+		text-transform: uppercase;
+		color: white;
+	}
+		time{
+		font-family: $lato;
+		list-style: none;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+		text-transform: uppercase;
+		color: white;
+	}
+}
+
+.titre_decoratif{
+	width: 100%;
+	display: flex;
+	align-items:center;
+	h2{
+
+
+	text-orientation: sideways-left;
+	letter-spacing: 10px;
+	 writing-mode: vertical-rl;
+    font-size: 50px;
+    font-family: $lato;
+	color: #f0f0f0;
+	font-size: 100px;
+	font-weight: 800;
+	margin:0 auto;
+	margin-top: 50px;
+
+	@include breakpoint(small only){
+		display: none;
+	}
+	}
+}
+
+
