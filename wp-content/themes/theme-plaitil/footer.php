@@ -45,8 +45,21 @@
 </div><!-- Close off-canvas content wrapper -->
 <?php endif; ?>
 
+<script src="<?php echo get_stylesheet_directory_uri();?>/assets/javascript/jquery.flexslider.js"></script>
+<script type="text/javascript">
+
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});</script>
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
+
+
+
 </body>
 </html>
+

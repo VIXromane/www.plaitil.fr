@@ -19,7 +19,36 @@ get_header(); ?>
 	
 </div>
 
+<section id="slider">
 
+<!-- <div class="flexslider">
+	<ul class="slides">
+		<li class="">
+			<img class="slide" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/SLIDE1-CONTACT.jpg" alt="visuel slider projet agence">
+			<div class="content-slide text-center">
+				<h5>Vous avez un projet en tête ? </h5>
+				<a href="#">Contactez nous!</a>
+			</div>
+
+		</li>
+		<li>
+			<img class="slide" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/SLIDE2-SWAG.jpg" alt="visuel slider projet agence">
+			<div class="content-slide text-center">
+				<h5>SWAG 2015</h5>
+				<a href="#">Voir le projet</a>
+			</div>
+		</li>
+		<li>
+			<img class="slide" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/SLIDE3-BRUNET.jpg" alt="visuel slider projet agence">
+			<div class="content-slide text-center">
+				<h5>Bruno Saunier</h5>
+				<a href="#">Voir le projet</a>
+			</div>
+		</li>
+
+	</ul>
+</div> -->
+</section>
 
 <!--AGENCE-->
 
@@ -125,7 +154,7 @@ get_header(); ?>
 				Nous pouvons vous aider à concrétiser votre projet. 
 				Nous vous accompagnerons et développerons votre projet de façon à le rendre unique !
 			</h4>
-			    <?php echo do_shortcode('[contact-form-7 id="20" title="Formulaire de contact"]') ?>
+			<?php echo do_shortcode('[contact-form-7 id="20" title="Formulaire de contact"]') ?>
 		</div>
 	</div>
 
