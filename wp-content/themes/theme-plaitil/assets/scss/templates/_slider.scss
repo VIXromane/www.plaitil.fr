@@ -1,5 +1,5 @@
 #slider{
-	margin-top: -50px;
+	margin-top: -48px;
 
 	h5{
 		font-family: $lato;
@@ -29,9 +29,8 @@
 
 }
 
-
-
-.ms-info{
+.master-slider{
+	.ms-info{
 	margin: 0 auto !important;
 	margin-top: 10% !important;
 
@@ -42,7 +41,7 @@
 		color: white;
 		font-style: italic;
 		font-weight: 700;
-		padding: 10px 20px !important;
+		padding: 15px 30px !important;
 		border-radius: 50px;
 		border: 2px solid white;
 		transition:0.5s !important;
@@ -70,3 +69,6 @@
 		}
 	}
 }
+}
+
+

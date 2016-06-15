@@ -18,12 +18,23 @@
 		<li><?php echo $value = get_field("caracteristiques");?></li>
 		<h3>Date</h3>
 		<time><?php echo $value = get_field("time");?></time>
+		<?php echo $value = get_field("link");?>
 
 		
 	</article>
 
+
+	<div class="sidebar-networks">
+		<p>Partager sur :</p>
+		<ul class="social-list">
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+		</ul>	
+	</div>
+
 	<div class="titre_decoratif">
-			<h2><?php echo $value = get_field("titre_decoratif");?></h2>
+		<h2><?php echo $value = get_field("titre_decoratif");?></h2>
 	</div>
 
 

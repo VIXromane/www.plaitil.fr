@@ -46,10 +46,10 @@ p{
 	height: 50px;
 	margin-top: 25px;
 	border-radius: 50px;
-	line-height: 25px;
+	line-height: 18px;
 	font-family: $lato;
 	font-weight: 700;
-	font-family: 18px;
+	font-size: 18px;
 	font-style: italic;
 	color: $black;
 	background-color: $grayblue;
@@ -184,7 +184,7 @@ p{
 		padding:5px;
 		padding-left: 20px;
 		border-left: 6px solid black;
-		margin-bottom: 50px;
+		margin-bottom: 50px!important;
 
 	}
 }
