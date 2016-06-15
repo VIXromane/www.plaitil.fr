@@ -10,7 +10,7 @@
 	h1{
 		font-family: $lato;
 		color: white;
-		padding-top: 40px;
+		padding-top: 27px;
 		font-size: 60px;
 		font-weight: 800;
 	}
@@ -41,8 +41,8 @@
 }
 
 .description{
-width: 90%;
-margin-left: 50px;
+	width: 90%;
+	margin-left: 50px;
 
 	p{
 		font-family: $play;
@@ -201,6 +201,37 @@ margin-left: 50px;
 					}
 				}
 			}
+		}
+	}
+}
+
+.back{
+	margin-top: 0 auto;
+	margin-top: 50px;
+	.back-home{
+		font-family: $lato;
+		font-weight: 700;
+		font-style: italic;
+		color: $black;
+		font-size: 18px;
+		transition:0.5s;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+			transition:0.5s;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			color: $blue;
+		}
+
+		i{
+			padding-right:15px;
+
 		}
 	}
 }

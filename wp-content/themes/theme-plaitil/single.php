@@ -35,8 +35,13 @@ get_header(); ?>
 				
 			</div>
 
-
 			<?php the_content(); ?>
+			<div class="back text-center">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="back-home"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Retour à l'accueil
+				</a>
+			</div>
+
+
 		</div>
 		<footer>
 			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
