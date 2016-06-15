@@ -52,7 +52,7 @@
 			</nav>
 		</header>
 
-		<div class="responsivemenu text-center"><!-- RESPONSIVE MENU -->
+		<div class="responsivemenu text-center"><!-- MENU RESPONSIVE -->
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 		</div>
 

@@ -15,17 +15,17 @@
 	<article class="infos-projet medium-3 small-12 columns">
 
 		<h3>Caractéristiques</h3>
-		<li><?php echo $value = get_field("caracteristiques");?></li>
+		<li><?php the_category('<br/>'); ?></li>
 		<h3>Date</h3>
 		<time><?php echo $value = get_field("time");?></time>
-		<?php echo $value = get_field("link");?>
+		<strong class="link-site"><?php echo $value = get_field("link");?></strong>
 
 		
 	</article>
 
 
 	<div class="sidebar-networks">
-		<p>Partager sur :</p>
+		<h6>Partager sur :</h6>
 		<ul class="social-list">
 			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

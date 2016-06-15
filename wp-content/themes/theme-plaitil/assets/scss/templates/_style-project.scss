@@ -90,7 +90,7 @@
 	background-color: $black;
 	display: block;
 	padding:0 50px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 	padding-top: 25px;
 	width: 100%;
 	margin-bottom: 50px;
@@ -111,32 +111,9 @@
 		line-height: 24px;
 		text-align: left;
 		text-transform: uppercase;
-		color: white;
-	}
-	time{
-		font-family: $lato;
-		list-style: none;
-		font-size: 14px;
-		line-height: 24px;
-		text-align: left;
-		display: block;
-		text-transform: uppercase;
-		color: white;
-		padding-bottom: 50px !important;
-	}
-	p{	text-align: center;
+		
 		a{
-			height: 50px;
-			text-align: center;
-			border-radius: 50px;
-			line-height: 25px;
-			font-family: $lato;
-			font-weight: 700;
-			font-size: 16px;
-			font-style: italic;
-			color: $black;
-			background-color: $grayblue;
-			padding:15px 40px;
+			color: white;
 			transition:0.5s;
 			-webkit-transition: all 0.3s ease-in-out;
 			-moz-transition: all 0.3s ease-in-out;
@@ -149,11 +126,56 @@
 				-moz-transition: all 0.3s ease-in-out;
 				-o-transition: all 0.3s ease-in-out;
 				transition: all 0.3s ease-in-out;
-				background-color: $blue;
-				color: white;
+				color: $blue;
 			}
 		}
 	}
+	time{
+		font-family: $lato;
+		list-style: none;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+		display: block;
+		text-transform: uppercase;
+		color: white;
+		padding-bottom: 50px !important;
+	}
+	strong{
+		color: pink;
+		p{	text-align: center;
+			a{
+				height: 50px !important;
+				display: block;
+				text-align: center;
+				border-radius: 50px;
+				line-height: 50px;
+				font-family: $lato;
+				font-weight: 700;
+				font-size: 16px;
+				font-style: italic;
+				color: $black;
+				background-color: $grayblue;
+				transition:0.5s;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+
+				&:hover{
+					transition:0.5s;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+					background-color: $blue;
+					color: white;
+				}
+			}
+		}
+	}
+	
+
 	
 }
 
@@ -187,11 +209,13 @@
 	height: 50px;
 	display: block;
 	border: 2px solid black;
-	p{
+	h6{
 		float: left;
 		margin-left: 30px;
 		line-height: 50px;
 		font-weight: 400;
+		font-family: $lato;
+		font-size: 14px;
 	}
 	ul{
 		list-style: none;

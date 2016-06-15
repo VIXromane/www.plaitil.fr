@@ -11,7 +11,7 @@
 ?>
 
 
-<div class="medium-4 small-12 columns">
+<div class="medium-4 small-12 columns end">
 	<article class="item-portfolio" id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
 
 	<a href="<?php the_permalink(); ?>">
