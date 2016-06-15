@@ -35,26 +35,38 @@
 		<?php do_action( 'foundationpress_layout_start' ); ?>
 
 		<header id="masthead" role="banner">
-			<div class="logo medium-4 offset-2 small-6  columns">
-				<a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img id="logo-head"src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/logo-plaitil.png" alt="logo principal main timelapse">
-				</a>
-			</div>
 
-			<nav id="site-navigation" role="navigation" class="small-2 offset-6 columns">
 
-				<!-- CUSTOM MENU -->
+<!-- 			<nav id="site-navigation" role="navigation" class="small-2 offset-6 columns">
+
 				
 				<div class="header-custom-menu">
 					<button class="showmenuresponsive"><i class="fa fa-bars"></i></button>
 				</div>
 
-			</nav>
+			</nav> -->
+
+
+			<div class="menu-collapsed">
+				<div class="bar"></div>
+				<nav>
+					<ul>
+						<li><a href="http://localhost:8888/www.plaitil.fr/#agence">Agence Plaît-il</a></li>
+						<li><a href="http://localhost:8888/www.plaitil.fr/#projets">Projets</a></li>
+						<li><a href="http://localhost:8888/www.plaitil.fr/#contact">Contact</a></li>
+					</ul>
+				</nav>  
+			</div>
+						<div class="logo top-bar-right">
+				<a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img id="logo-head"src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/logo-plaitil.png" alt="logo principal main timelapse">
+				</a>
+			</div>
 		</header>
 
-		<div class="responsivemenu text-center"><!-- MENU RESPONSIVE -->
+<!-- 		<div class="responsivemenu text-center">
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-		</div>
+		</div> -->
 
 
 		<section class="container">

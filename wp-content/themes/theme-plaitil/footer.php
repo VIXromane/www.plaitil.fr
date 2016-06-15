@@ -67,7 +67,13 @@ $('.showmenuresponsive').on('click', function(){
 	$('.responsivemenu').toggle('slow')
 })
 
+$(".menu-collapsed").click(function() {
+  $(this).toggleClass("menu-expanded");
+});
+
 </script>
+
+
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>

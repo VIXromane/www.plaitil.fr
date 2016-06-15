@@ -79,7 +79,7 @@ p{
 /***AGENCE***/
 
 #agence{
-		margin-right:-9px;
+	margin-right:-9px;
 
 	i{
 		font-size: 30px;
@@ -101,15 +101,18 @@ p{
 			-moz-transition: all 0.3s ease-in-out;
 			-o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
+			-ms-transform: rotate(5deg); /* IE 9 */
+			-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+			transform: rotate(5deg);
 
 			@include breakpoint(small only){
 				margin-bottom: 50px;
 			}
 			
 			&:hover{
-				-ms-transform: rotate(5deg); /* IE 9 */
-				-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
-				transform: rotate(5deg);
+				-ms-transform: rotate(-5deg); /* IE 9 */
+				-webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+				transform: rotate(-5deg);
 				transition:0.5s;
 				-webkit-transition: all 0.3s ease-in-out;
 				-moz-transition: all 0.3s ease-in-out;
@@ -143,15 +146,18 @@ p{
 				-moz-transition: all 0.3s ease-in-out;
 				-o-transition: all 0.3s ease-in-out;
 				transition: all 0.3s ease-in-out;
+				-ms-transform: rotate(-5deg); /* IE 9 */
+				-webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+				transform: rotate(-5deg);
 			}
 
 			@include breakpoint(small only){
 				margin-bottom: 0px !important;
 			}
 			&:hover{
-				-ms-transform: rotate(-5deg); /* IE 9 */
-				-webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
-				transform: rotate(-5deg);
+				-ms-transform: rotate(5deg); /* IE 9 */
+				-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+				transform: rotate(5deg);
 				transition:0.5s;
 				-webkit-transition: all 0.3s ease-in-out;
 				-moz-transition: all 0.3s ease-in-out;
