@@ -4,6 +4,10 @@
 .no-padding{
 	padding-left:0px !important;
 }
+
+body{
+	background: url("../images/visuels/grid.png") repeat center;
+}
 .title{
 	display: block;
 	background-color: $blue;
@@ -75,6 +79,8 @@ p{
 /***AGENCE***/
 
 #agence{
+		margin-right:-9px;
+
 	i{
 		font-size: 30px;
 		font-weight: 800;
@@ -209,6 +215,8 @@ p{
 /*** CONTACT FORMULAIRE ***/
 
 #contact{
+
+	margin-left:-9px;
 	img{
 		transition:0.5s;
 		-webkit-transition: all 0.3s ease-in-out;
@@ -229,6 +237,7 @@ p{
 }
 
 form{
+
 	input{
 		height:50px !important;
 		background-color: white;

@@ -7,12 +7,20 @@
 	display: block;
 	height: 190px;
 	margin-top: 0px !important;
+
+	@include breakpoint(small only){
+		height:250px;
+	}
 	h1{
 		font-family: $lato;
 		color: white;
 		padding-top: 27px;
 		font-size: 60px;
 		font-weight: 800;
+
+		@include breakpoint(small only){
+			padding-top:15px;
+		}
 	}
 	h2{
 		font-family: $lato;
@@ -29,20 +37,31 @@
 	display: flex;
 	align-items:center;
 	margin-bottom: 50px;
+
+	@include breakpoint(small only){
+		display: block;
+	}
 }
 .lettrine{
 	font-family: $lato;
-	color: #f0f0f0;
+	color: #f5f5f5;
 	font-size: 400px;
 	font-weight: 800;
 	margin-top: -40px;
 
+	@include breakpoint(small only){
+		margin: 0px;
+		text-align:center;
+		height: 80%;
+		margin-top:-150px;
+	}
 
 }
 
 .description{
-	width: 90%;
-	margin-left: 50px;
+	width: 100%;
+	display: block;
+	padding-left: 10px;
 
 	p{
 		font-family: $play;

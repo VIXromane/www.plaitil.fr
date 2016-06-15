@@ -6,6 +6,8 @@ body{
 	display: block;
 	height: 100px !important;
 	border-bottom: 6px solid $blue;
+	z-index:30;
+	background-color: #fff;
 }
 
 .logo{
@@ -14,18 +16,18 @@ body{
 	align-items:center;
 
 	#logo-head{
-		transform: scale(0.5);
+		
 		-webkit-transition: all 0.3s ease-in-out;
 		-moz-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
+		width: 50%;
 
 		&:hover{
 			-webkit-transition: all 0.3s ease-in-out;
 			-moz-transition: all 0.3s ease-in-out;
 			-o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
-			transform: scale(0.55);
 		}
 
 	}

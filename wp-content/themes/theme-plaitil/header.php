@@ -35,8 +35,8 @@
 		<?php do_action( 'foundationpress_layout_start' ); ?>
 
 		<header id="masthead" role="banner">
-			<div class="logo small-2 offset-6 columns">
-				<a class="logo-head" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<div class="logo medium-4 offset-2 small-6  columns">
+				<a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img id="logo-head"src="<?php echo get_stylesheet_directory_uri();?>/assets/images/visuels/logo-plaitil.png" alt="logo principal main timelapse">
 				</a>
 			</div>

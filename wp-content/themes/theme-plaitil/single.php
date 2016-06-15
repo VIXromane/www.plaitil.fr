@@ -23,10 +23,10 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div class="entry-content">
 			<div class="intro-project row">
-				<div class="medium-5 small-12 columns lettrine" >
+				<div class="medium-2 small-12 columns lettrine" >
 					<?php echo $value = get_field("lettrine");?>
 				</div>
-				<div class="medium-7 small-12 columns description">
+				<div class="medium-10 small-12 columns description">
 					<p><strong><?php echo $value = get_field("description_bold");?><strong></p>
 					<p><?php echo $value = get_field("description");?></p>
 				</div>

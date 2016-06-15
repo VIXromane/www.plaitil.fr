@@ -69,7 +69,7 @@ get_header(); ?>
 				<p>Chaque <strong>projet</strong>, chaque client est <strong>unique</strong>. Pour chacun, nous mettons en œuvre une <strong>méthodologie</strong> structurée et <strong>sur-mesure</strong>. Elle garantit un pilotage efficace et le respect de nos <strong>engagements</strong>.
 
 				</p>
-				<a href="#" class="button medium-4 small-12 columns">Nos projets</a>
+				<a href="#projets" class="button medium-4 small-12 columns js-scrollTo">Nos projets</a>
 			</div>
 
 			<div class="medium-6 small-12 columns">
@@ -90,7 +90,7 @@ get_header(); ?>
 				<h3>Il est une promesse que nous pouvons vous faire : 
 					vous n’allez pas vous ennuyer !</h3>
 
-					<a href="#" class="button medium-4 small-12 columns">Contactez-nous !</a>
+					<a href="#contact" class="button medium-4 small-12 columns js-scrollTo">Contactez-nous !</a>
 				</div>
 
 			</div>
